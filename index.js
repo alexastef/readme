@@ -1,9 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown.js");
-
-const writeFileAsync = util.promisify(fs.writeFile);
 
 
 const questions = [
@@ -13,8 +10,13 @@ const questions = [
         type: "input"
     },
     {
-        message: "What is the email on your GitHub account?",
+        message: "What is your GitHub email address?",
         name: "email",
+        type: "input"
+    },
+    {
+        message: "If you'd like to link to your portfolio, please provide the URL.",
+        name: "portfolio",
         type: "input"
     },
     {
@@ -23,24 +25,37 @@ const questions = [
         type: "input"
     },
     {
-        message: "Tell us a little about your project",
+        message: "Tell us a little about your project.",
         name: "description",
         type: "input"
     },
     {
         message: "What is your project URL?",
-        name: "url",
+        name: "demo",
         type: "input"
     },
     {
-        message: "What is required to run your project? Please provide a step-by-step description of how to get the dev environment running.",
-        name: "installation",
-        type: "input"
+        message: "What command should be run to install dependencies?",
+        name: "install",
+        type: "input",
+        default: "npm i"
     },
     {
-        message: "What are the instructions for use? Is there anything the user needs to know about using this repo?",
+        message: "What are the instructions for use? Is there anything the user needs to know about using this repo, including prerequisites?",
         name: "usage",
         type: "input"
+    },
+    {
+        message: "What command should be run to start application?",
+        name: "usageCommand",
+        type: "input",
+        default: "npm start"
+    },
+    {
+        message: "What command should be run to run tests?",
+        name: "tests",
+        type: "input",
+        default: "npm test"
     },
     {
         message: "Would you like other developers to contribute to this project? If so, what are the guidelines for doing so?",
@@ -51,20 +66,8 @@ const questions = [
         message: "What type of license does your project have?",
         name: "license",
         type: "list",
-        choices: ["a", "b", "c"]
+        choices: ["MIT", "LGPL-3.0", "MPL-2.0", "AGPL-3.0", "APACHE-2.0", "None"]
     },
-    {
-        message: "What command should be run to install dependencies?",
-        name: "dependencies",
-        type: "input",
-        default: "npm i"
-    },
-    {
-        message: "What command should be run to run tests?",
-        name: "tests",
-        type: "input",
-        default: "npm test"
-    }
 
 ];
 
@@ -81,9 +84,8 @@ function writeToFile(fileName, data) {
 // init function prompting user with questions above
 function init(){
     inquirer.prompt(questions).then((data) => {
-        // console.log(data)
         // create text for file by passing data into the generateMarkdown function exported from generateMarkdown.js
-        const text = generateMarkdown(data);
+        const text = generateMarkdown(data);        
         // call writeToFile for a README with the text
         writeToFile("README.md", text);
     })

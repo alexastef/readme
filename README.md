@@ -1,14 +1,20 @@
-# Testing README Generator  
+# tigers  
 
 ***
-![GitHub license](https://img.shields.io/badge/license-GPL.3.0-blue.svg)
+[![GitHub license](https://img.shields.io/badge/license-None-blue.svg)](https://shields.io/)
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 
-### Description
-This is a test to upload latest working code  
+
+
+## Description
+tiger facts  
+
+[Demo here!](alexastef.github.io/tigers)
 
 ***
 
-### Table of Contents  
+## Table of Contents  
 * [Installation](#installation)  
 * [Usage](#usage)  
 * [License](#license)
@@ -18,26 +24,41 @@ This is a test to upload latest working code
 
 ***
 
-### Installation  
-  
+## Installation  
+ 
+    npm i  
 
 ***
 
-### Usage  
-  
+## Usage  
+no  
+
+To start application, run npm start:  
+ 
+    npm start  
+ 
+
+***
+
+## Tests  
+
+    npm test
+
+***
+
+
+## Author
+![user photo](https://avatars.githubusercontent.com/alexastef?size=100)
+- GitHub: [alexastef](https://github.com/alexastef)  
+- Portfolio: [alexastef.github.io](alexastef.github.io)
+
+Any questions? Contact me at alexa.c.stef@gmail.com
+
+## Contributing  
+sure 
 
 *** 
 
-### License  
-a  
-
-***
-
-### Contributing  
-  
-
-***
-
-### Tests  
-npm test
+## License  
+None  
 
