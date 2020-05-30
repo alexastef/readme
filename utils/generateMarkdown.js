@@ -12,7 +12,7 @@ ${data.description}
 
 [Demo here!](${data.demo})
 
-***
+
 
 ## Table of Contents  
 * [Installation](#installation)  
@@ -22,13 +22,13 @@ ${data.description}
 * [Tests](#tests)  
 * [Questions?](#questions)  
 
-***
+
 
 ## Installation  
  
     ${data.install}  
 
-***
+
 
 ## Usage  
 ${data.usage}  
@@ -38,13 +38,12 @@ To start application, run ${data.usageCommand}:
     ${data.usageCommand}  
  
 
-***
+
 
 ## Tests  
 
     ${data.tests}
 
-***
 
 
 ## Author
@@ -57,7 +56,7 @@ Any questions? Contact me at ${data.email}
 ## Contributing  
 ${data.contributing} 
 
-*** 
+ 
 
 ## License  
 ${data.license}  
