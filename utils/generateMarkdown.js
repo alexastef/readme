@@ -10,7 +10,7 @@ function generateMarkdown(data) {
 ## Description
 ${data.description}  
 
-[Demo here!](${data.demo})
+[Demo here!](http://${data.demo})
 
 
 
@@ -20,7 +20,7 @@ ${data.description}
 * [License](#license)
 * [Contributing](#contributing)  
 * [Tests](#tests)  
-* [Questions?](#questions)  
+* [Questions?](#author)  
 
 
 
@@ -49,7 +49,7 @@ To start application, run ${data.usageCommand}:
 ## Author
 ![user photo](https://avatars.githubusercontent.com/${data.username}?size=100)
 - GitHub: [${data.username}](https://github.com/${data.username})  
-- Portfolio: [${data.portfolio}](${data.portfolio})
+- Portfolio: [${data.portfolio}](http://${data.portfolio})
 
 Any questions? Contact me at ${data.email}
 
