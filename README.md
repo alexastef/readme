@@ -9,7 +9,7 @@
 ## Description
 A command line application that enables user to generate README files quickly and easily by answering a series of prompts about their project. This README was generated using the app :)  
 
-[Demo here!](alexastef.github.io/readme)
+[Demo here!](http://alexastef.github.io/readme)
 
 
 
@@ -48,7 +48,7 @@ To start application, run npm start:
 ## Author
 ![user photo](https://avatars.githubusercontent.com/alexastef?size=100)
 - GitHub: [alexastef](https://github.com/alexastef)  
-- Portfolio: [alexastef.github.io](alexastef.github.io)
+- Portfolio: [alexastef.github.io](https://alexastef.github.io)
 
 Any questions? Contact me at alexa.c.stef@gmail.com
 
